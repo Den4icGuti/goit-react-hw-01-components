@@ -1,4 +1,4 @@
-import propTypes from "prop-types";
+ import PropTypes from "prop-types";
 import styles from './Profile.module.css'
 
 export default function Profile(props) {
@@ -13,25 +13,36 @@ export default function Profile(props) {
           alt="User avatar"
           className={styles.avatar}
     />
-        <p className={styles.text}>{username}</p>
+        <p className={styles.name}>{username}</p>
         <p className={styles.text}>{tag}</p>
         <p className={styles.text}>{location}</p>
   </div>
     
       <ul className={styles.list}>
         <li className={styles.item}>
-          <span class="label">Followers:</span>
-      <span class="quantity"> {stats.followers}</span>
+          <span className="label">Followers:</span>
+      <span className="quantity"> {stats.followers}</span>
     </li>
     <li  className={styles.item}>
-          <span class="label">Views:</span>
-      <span class="quantity"> {stats.views}</span>
+          <span className="label">Views:</span>
+      <span className="quantity"> {stats.views}</span>
     </li>
     <li  className={styles.item}>
-          <span class="label">Likes: </span>
-      <span class="quantity">{stats.likes}</span>
+          <span className="label">Likes: </span>
+      <span className="quantity">{stats.likes}</span>
     </li>
   </ul>
 </div>
   );
- }
+}
+
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes:PropTypes.number.isRequired
+  })
+  }

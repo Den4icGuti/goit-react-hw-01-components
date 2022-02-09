@@ -4,11 +4,12 @@ import Profile from './Profile/Profile'
 function App() { 
   return (
     <Container>
-      <Profile username={user.username}
+      <Profile
+        username={user.username}
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
-          stats={user.stats}
+        stats={user.stats}
       />
    </Container>
  )
