@@ -2,13 +2,13 @@
 import styles from './Profile.module.css'
 
 export default function Profile(props) {
-  const { username, tag, location,stats } = props;
+  const { username,avatar, tag, location,stats } = props;
   
   return (
     <div className={styles.profile}>
       <div>
     <img
-          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+          src={avatar}
           width={120}
           alt="User avatar"
           className={styles.avatar}
