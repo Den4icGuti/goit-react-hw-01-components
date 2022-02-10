@@ -20,16 +20,16 @@ export default function Profile(props) {
     
       <ul className={styles.list}>
         <li className={styles.item}>
-          <span className="label">Followers:</span>
-      <span className="quantity"> {stats.followers}</span>
+          <span className="label">Followers</span>
+      <span className={styles.quantity}> {stats.followers}</span>
     </li>
     <li  className={styles.item}>
-          <span className="label">Views:</span>
-      <span className="quantity"> {stats.views}</span>
+          <span className="label">Views</span>
+      <span className={styles.quantity}> {stats.views}</span>
     </li>
     <li  className={styles.item}>
-          <span className="label">Likes: </span>
-      <span className="quantity">{stats.likes}</span>
+          <span className="label">Likes </span>
+          <span className={styles.quantity}>{stats.likes}</span>
     </li>
   </ul>
 </div>
