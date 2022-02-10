@@ -1,6 +1,8 @@
 import Container from "Container/Container";
-import user from './Profile/user.json'
-import Profile from './Profile/Profile'
+import user from './Components/Profile/user.json';
+import Profile from './Components/Profile/Profile';
+import Statistic from './Components/Statistics/Statistic'
+import stats from './Components/Statistics/data.json'
 function App() { 
   return (
     <Container>
@@ -11,7 +13,8 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-   </Container>
+      <Statistic stats={stats.data}/>
+    </Container>
  )
 }
 
