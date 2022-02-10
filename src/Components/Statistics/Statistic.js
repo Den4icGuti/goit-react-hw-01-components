@@ -18,7 +18,8 @@ export default function Satistic(props) {
       <span className={styles.label}>.pdf</span>
       <span className={styles.label}>41%</span>
     </li>
-    <li className={styles.item}>
+        <li className={styles.item}>
+          
           <span className={styles.label}>.mp4</span>
       <span className={styles.label}>12%</span>
     </li>
