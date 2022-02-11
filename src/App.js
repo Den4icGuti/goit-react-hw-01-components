@@ -1,7 +1,7 @@
 import Container from "Container/Container";
 import user from './Components/Profile/user.json';
 import Profile from './Components/Profile/Profile';
-import Statistic from './Components/Statistics/Statistic'
+ import Statistic from './Components/Statistics/Statistic'
 import stats from './Components/Statistics/data.json'
 function App() { 
   return (
@@ -13,7 +13,7 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistic stats={stats.data}/>
+      { <Statistic stats={stats.data}/> }
     </Container>
  )
 }

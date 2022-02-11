@@ -1,4 +1,6 @@
 import styles from './Statistics.module.css';
+
+
 export default function Satistic({label,percentage}) { 
 
   return (
