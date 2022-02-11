@@ -1,8 +1,8 @@
 import styles from './Statistics.module.css'
+import PropTypes from 'prop-types';
 
 
-
-export default function Satistic({ item,title }) { 
+export default function Statistic({ item }) { 
  
   return (
     <section className={styles.statistics}>
@@ -18,3 +18,4 @@ export default function Satistic({ item,title }) {
   </section>
   );
 }
+
