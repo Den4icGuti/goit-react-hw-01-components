@@ -13,7 +13,8 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistic stats={data} />
+      <Statistic item={data} />
+     
     </Container>
  )
 }
