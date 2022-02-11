@@ -45,14 +45,15 @@ img {
   justify-content: center;
   align-items: center;
   background-color: rgb(178 182 184);
-  padding: 15px;
 }
 
 .item {
-  margin-left: 30px;
-  width: 70px;
-  height: auto;
+  width: 100px;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .item:first-child {
@@ -62,4 +63,9 @@ img {
 .quantity {
   font-size: 18px;
   font-weight: 600;
+}
+
+.profile li:nth-child(2n) {
+  border-right: 1px solid #1e38855b;
+  border-left: 1px solid #1e38855b;
 }
