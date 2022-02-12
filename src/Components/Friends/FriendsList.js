@@ -1,5 +1,9 @@
-// import Friends from "./Friends";
+import Friends from "./Friends";
 
-// export default FriendsList({ item }){ 
-  
-// }
+export default function FriendsList({item}) {
+  return (
+    <Friends>
+     
+    </Friends>
+  )
+ }
