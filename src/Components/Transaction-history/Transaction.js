@@ -1,6 +1,6 @@
 
-export default function Transacton(prop) {
-  const {type,amount,currency} = prop;
+export default function Transacton(props) {
+  const {type,amount,currency} = props;
   return (
   <table className="">
   <thead>
@@ -17,6 +17,7 @@ export default function Transacton(prop) {
           <td>{amount}</td>
           <td>{currency}</td>
     </tr>
+  
   </tbody>
 </table>
   )
