@@ -6,7 +6,7 @@ export default function Friends(props) {
   const {avatar,name,isOnline} = props
   return (
     <div>
-      <span className={styles.statysOnline}>{isOnline}</span>
+      <span className={styles.statysOnline} style={{backgroundColor: isOnline ? 'green': 'red'}}></span>
       <img className={styles.imgUser} src={avatar} alt="User avatar" width="30" />
       <h2 className={styles.nameUser}>{name}</h2>
     </div>
@@ -14,6 +14,6 @@ export default function Friends(props) {
 }
 
 Friends.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  name:PropTypes.string
+ avatar: PropTypes.string.isRequired,
+  name:PropTypes.string.isRequired
 }
