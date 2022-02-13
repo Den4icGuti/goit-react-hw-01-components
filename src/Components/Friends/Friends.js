@@ -5,11 +5,11 @@ import styles from './Frindes.module.css'
 export default function Friends(props) { 
   const {avatar,name,isOnline} = props
   return (
-    <div>
+    <section>
       <span className={styles.statysOnline} style={{backgroundColor: isOnline ? 'green': 'red'}}></span>
       <img className={styles.imgUser} src={avatar} alt="User avatar" width="30" />
       <h2 className={styles.nameUser}>{name}</h2>
-    </div>
+    </section>
   )
 }
 

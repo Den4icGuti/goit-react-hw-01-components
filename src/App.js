@@ -2,10 +2,13 @@ import Container from "Container/Container";
 import user from './Components/Profile/user.json';
 import Profile from './Components/Profile/Profile';
 
+
 import Statistic from './Components/Statistics/Statistics';
 import data from './Components/Statistics/data.json';
 import dataFriends from './Components/Friends/friends.json';
 import FriendsList from "Components/Friends/FriendsList";
+import dataTransaction from './Components/Transaction-history/transactions.json';
+import Transacton from "Components/Transaction-history/Transaction";
 
 function App() { 
   return (
@@ -18,7 +21,9 @@ function App() {
         stats={user.stats}
       />
       <Statistic item={data} />
-      <FriendsList item={dataFriends}/>
+      <FriendsList item={dataFriends} />
+      <Transacton props={dataTransaction}
+      />
       </Container>
     )
 }
