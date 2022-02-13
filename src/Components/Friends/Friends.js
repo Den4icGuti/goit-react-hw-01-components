@@ -1,17 +1,19 @@
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
+import styles from './Frindes.module.css'
+
 
 export default function Friends(props) { 
   const {avatar,name,isOnline} = props
   return (
-  <li>
-      <span>Statys {isOnline ? 'red' : 'green'}</span>
-      <img  src={avatar} alt="User avatar" width="48" />
-      <p>Name: {name}</p>
-</li>
+    <div>
+      <span className={styles.statysOnline}>{isOnline}</span>
+      <img className={styles.imgUser} src={avatar} alt="User avatar" width="30" />
+      <h2 className={styles.nameUser}>{name}</h2>
+    </div>
   )
 }
 
 Friends.propTypes = {
-  avatar: PropTypes.string,
+  avatar: PropTypes.string.isRequired,
   name:PropTypes.string
 }
