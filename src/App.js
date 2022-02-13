@@ -8,7 +8,7 @@ import data from './Components/Statistics/data.json';
 import dataFriends from './Components/Friends/friends.json';
 import FriendsList from "Components/Friends/FriendsList";
 import transactions from './Components/Transaction-history/transactions.json';
-import TransactonHistory from "Components/Transaction-history/Transaction";
+import TransactionItem from "Components/Transaction-history/TransactionsItem";
 
 function App() { 
   return (
@@ -22,7 +22,10 @@ function App() {
       />
       <Statistic item={data} />
       <FriendsList item={dataFriends} />
-      <TransactonHistory props={transactions}
+      <TransactionItem transaction={transactions}
+        type={transactions.type}
+        amount={transactions.amount}
+        currency={transactions.amount}
       />
       </Container>
     )

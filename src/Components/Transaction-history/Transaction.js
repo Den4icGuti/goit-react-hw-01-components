@@ -1,24 +1,20 @@
+import PropTypes from "prop-types";
+import styles from './TransactionTable.module.css'
 
 export default function Transacton(props) {
   const {type,amount,currency} = props;
   return (
-  <table className="">
-  <thead>
-    <tr>
-          <th>TYPE</th>
-          <th>AMOUNT</th>
-          <th>CURRENCY</th>
-    </tr>
-  </thead>
- 
-      <tbody>
-    <tr>
-          <td>{type}</td>
-          <td>{amount}</td>
-          <td>{currency}</td>
-    </tr>
-  
-  </tbody>
-</table>
-  )
+    <>
+      <td className={styles.textInfo}>{type}</td>
+      <td className={styles.textInfo}>{amount}</td>
+      <td className={styles.textInfo}>{currency}</td>
+    </>
+
+  );
+};
+
+Transacton.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency:PropTypes.string.isRequired
 }
