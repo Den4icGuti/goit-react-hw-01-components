@@ -7,7 +7,7 @@ export default function Statistic({ item }) {
  
   return (
     <section className={styles.statistics}>
-      <h2 className={styles.title}>ULOAD STATS</h2>
+      <h2 className={styles.title}>UPLOAD STATS</h2>
       <ul className={styles.statlist}>
           {item.map(({ id, label, percentage }) => (
             <li className={styles.item} key={id}>
