@@ -1,13 +1,13 @@
-import Container from "Container/Container";
-import user from './Components/Profile/user.json';
+import Container from "Components/Container/Container";
+import user from './data/user.json';
 import Profile from './Components/Profile/Profile';
 
 
 import Statistic from './Components/Statistics/Statistics';
-import data from './Components/Statistics/data.json';
-import dataFriends from './Components/Friends/friends.json';
+import data from './data/data.json';
+import dataFriends from './data/friends.json';
 import FriendsList from "Components/Friends/FriendsList";
-import transactions from './Components/Transaction-history/transactions.json';
+import transactions from './data/transactions.json';
 import TransactionItem from "Components/Transaction-history/TransactionsItem";
 
 function App() { 
@@ -20,7 +20,9 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistic item={data} />
+      <Statistic
+        title='Upload stats'
+        item={data} />
       <FriendsList item={dataFriends} />
       <TransactionItem transaction={transactions}
         type={transactions.type}
